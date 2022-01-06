@@ -1,0 +1,584 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background1">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/back_foreground"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="-50dp"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textAlignment="center"
+            android:text="设置"/>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_setting"
+                android:text="提醒通知"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/linear_card"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@drawable/remind_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="日常提醒"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end">
+                        <Switch
+                            android:layout_width="45dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="5dp"
+                            />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_setting"
+                android:text="个性化"/>
+
+            <LinearLayout
+                android:id="@+id/linear_personality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/linear_card"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2"
+                        android:id="@+id/theme">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/theme_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        android:id="@+id/zhuti">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="主题"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end"
+                        android:id="@+id/next">
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/image_setting"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2"
+                        >
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/store_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="表情商城"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end"
+                        >
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/image_setting"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2"
+                        >
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/typeface_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="字体库"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end"
+                        >
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/image_setting"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2"
+                        >
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/setting_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65"
+                        >
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="偏好设置"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end"
+                        >
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_setting"
+                android:text="辅助工具"/>
+
+
+            <LinearLayout
+                android:id="@+id/linear_tool"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/linear_card"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/statistic_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="情绪统计"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end">
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="15dp"
+                android:textSize="17sp"
+                android:textColor="@color/text_setting"
+                android:text="支持我们"/>
+
+            <LinearLayout
+                android:id="@+id/linear_support"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/linear_card"
+                android:orientation="vertical"
+                android:layout_marginBottom="40dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/email_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="意见邮箱"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end">
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/image_setting"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="30dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/good_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="给个好评"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end">
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <Button
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@color/image_setting"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:gravity="center_vertical"
+                        android:layout_weight="2">
+
+                        <Button
+                            android:layout_width="25dp"
+                            android:layout_height="25dp"
+                            android:layout_marginStart="20dp"
+                            android:background="@mipmap/share_foreground" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0.65">
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="50dp"
+                            android:layout_marginStart="5dp"
+                            android:gravity="center_vertical"
+                            android:text="分享给好友"
+                            android:textColor="@color/white"
+                            android:textSize="17sp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:gravity="end">
+                        <Button
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginEnd="15dp"
+                            android:background="@drawable/next_foreground"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+</LinearLayout>

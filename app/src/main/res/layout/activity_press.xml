@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background1"
+    tools:context=".write">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="start"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/btn_store"
+            android:background="@drawable/home_foreground"
+            android:layout_marginTop="10dp"
+            android:layout_marginStart="10dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_weight="1"
+        android:gravity="end"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/close_foreground" />
+    </LinearLayout>
+</LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center">
+
+    <LinearLayout
+        android:id="@+id/linear_card"
+        android:layout_width="280dp"
+        android:layout_height="230dp"
+        android:layout_marginTop="50dp"
+        android:background="@color/background1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/tv_hei"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:text="嘿！你今天感觉如何？"
+            android:textColor="@color/white"
+            android:textSize="32dp" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_weight="4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="end">
+
+                <Button
+                    android:id="@+id/btn_date"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/date_foreground" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_weight="1.2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start">
+                <TextView
+                    android:id="@+id/tv_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="20dp"
+                    android:gravity="center"
+                    android:textSize="20sp"
+                    android:textColor="@color/white" />
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+
+
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginBottom="20dp"
+        android:layout_height="300dp">
+
+        <ImageButton
+            android:id="@+id/btn_press"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:background="@drawable/btn_press"
+            />
+    </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

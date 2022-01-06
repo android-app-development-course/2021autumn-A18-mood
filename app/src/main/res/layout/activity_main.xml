@@ -1,0 +1,1132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#242b35">
+
+    <TextView
+        android:id="@+id/tv_mouth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="20XX年 XX月"
+        android:textColor="#FFFFFF"
+        android:textSize="20sp"
+        tools:layout_centerHorizontal="true" />
+
+    <ImageButton
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+
+        android:layout_toEndOf="@id/btn_setting"
+        android:background="@drawable/back_foreground"
+        android:id="@+id/btn_premonth"/>
+    <ImageButton
+        android:id="@+id/btn_nextmonth"
+        android:background="@drawable/btn_next1_foreground"
+        android:layout_toStartOf="@id/btn_history"
+        android:layout_width="60dp"
+        android:layout_height="60dp"/>
+
+    <ImageButton
+        android:id="@+id/btn_setting"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:background="@drawable/setting_main_foreground" />
+
+    <ImageButton
+        android:id="@+id/btn_history"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/history_foreground" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day1"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day2"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day3"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@mipmap/face_happy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day4"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@mipmap/angry_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day5"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@mipmap/face_emo_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:id="@+id/Linear_6"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day6"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@mipmap/face_doubt_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day7"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="100dp"
+                    android:background="@mipmap/face_shy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day1"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day2"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="2"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day3"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="3"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day4"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="4"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day5"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="5"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day6"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="6"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_day7"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="7"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day8"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day9"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day10"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_happy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day11"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/angry_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day12"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_emo_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day13"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_doubt_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day14"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_shy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day8"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="8"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day9"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="9"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day10"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="10"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day11"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="11"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day12"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="12"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day13"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="13"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_day14"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="14"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day15"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day16"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day17"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_happy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day18"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/angry_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day19"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_emo_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day20"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_doubt_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day21"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_shy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day15"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="15"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day16"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="16"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day17"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="17"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day18"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="18"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day19"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="19"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day20"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="20"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_day21"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="21"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day22"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day23"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day24"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_happy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day25"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/angry_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day26"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_emo_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day27"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_doubt_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day28"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_shy_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day22"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="22"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day23"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="23"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day24"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="24"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day25"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="25"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day26"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="26"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day27"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="27"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/tv_day28"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="28"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day29"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day30"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:id="@+id/btn_day31"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@mipmap/face_sleep_foreground"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="false"
+                    android:background="@color/background1"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="false"
+                    android:background="@color/background1"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="false"
+                    android:background="@color/background1"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <ImageButton
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10dp"
+                    android:clickable="false"
+                    android:background="@color/background1"
+                    android:shadowRadius="0.2" />
+            </LinearLayout>
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day29"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="29"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day30"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="30"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+                    android:id="@+id/tv_day31"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:text="31"
+                    android:textAlignment="center"
+                    android:textColor="#FFFFFF" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/background1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/background1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/background1" />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:layout_weight="1">
+                <TextView
+
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+
+                    android:textAlignment="center"
+                    android:textColor="@color/background1" />
+            </LinearLayout>
+
+
+
+
+
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_add"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/btn_add"
+            android:text="＋"
+            android:textSize="34sp" />
+
+
+
+    </LinearLayout>
+
+
+
+
+
+</RelativeLayout>

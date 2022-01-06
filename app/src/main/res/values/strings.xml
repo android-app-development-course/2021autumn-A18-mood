@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">mood</string>
+    <string name="emo">难过的时候抱抱自己</string>
+    <string name="happy">要保持开心哦！</string>
+    <string name="angry">听一首歌，消消气</string>
+    <string name="calm">平平淡淡才是真</string>
+    <string name="strange">为自己而活，不要太在意别人的眼光</string>
+    <string name="doubt">愿你摆脱迷茫</string>
+    <string name="shy">AWSL!</string>
+</resources>
